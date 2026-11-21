@@ -1,0 +1,167 @@
+{
+  "schema": "aithos-audit-1",
+  "kind": "SYNTHETIC_FIXTURE_ONLY",
+  "source": {
+    "upstream_commit": "fda968e7fc1996aa23c67139c755fe541c9d4be0",
+    "upstream_bench_sha256": "acca9912c0013afa2bdfd47acbdc6417e079ae5b29596732029b897b3ba872ef"
+  },
+  "metadata": {
+    "model": "synthetic-fixture",
+    "engine": "aithos-mock-http-v1",
+    "system": {
+      "os": "Linux",
+      "architecture": "x86_64",
+      "python": "3.12.3"
+    },
+    "workload": "three exact sentinels, twice each; temperature 0; six samples per arm"
+  },
+  "runs": [
+    {
+      "name": "baseline_before",
+      "samples": [
+        {
+          "sentinel": "color",
+          "decode_tps": 124.216,
+          "prompt_tokens": 12,
+          "completion_tokens": 6,
+          "answer": "BLUE"
+        },
+        {
+          "sentinel": "math",
+          "decode_tps": 124.32,
+          "prompt_tokens": 12,
+          "completion_tokens": 6,
+          "answer": "4"
+        },
+        {
+          "sentinel": "capital",
+          "decode_tps": 124.35,
+          "prompt_tokens": 12,
+          "completion_tokens": 6,
+          "answer": "PARIS"
+        },
+        {
+          "sentinel": "color",
+          "decode_tps": 124.185,
+          "prompt_tokens": 12,
+          "completion_tokens": 6,
+          "answer": "BLUE"
+        },
+        {
+          "sentinel": "math",
+          "decode_tps": 124.239,
+          "prompt_tokens": 12,
+          "completion_tokens": 6,
+          "answer": "4"
+        },
+        {
+          "sentinel": "capital",
+          "decode_tps": 124.558,
+          "prompt_tokens": 12,
+          "completion_tokens": 6,
+          "answer": "PARIS"
+        }
+      ],
+      "quality": true,
+      "simulated_delay_ms": 40.0
+    },
+    {
+      "name": "candidate",
+      "samples": [
+        {
+          "sentinel": "color",
+          "decode_tps": 247.368,
+          "prompt_tokens": 12,
+          "completion_tokens": 6,
+          "answer": "BLUE"
+        },
+        {
+          "sentinel": "math",
+          "decode_tps": 246.406,
+          "prompt_tokens": 12,
+          "completion_tokens": 6,
+          "answer": "4"
+        },
+        {
+          "sentinel": "capital",
+          "decode_tps": 246.113,
+          "prompt_tokens": 12,
+          "completion_tokens": 6,
+          "answer": "PARIS"
+        },
+        {
+          "sentinel": "color",
+          "decode_tps": 247.142,
+          "prompt_tokens": 12,
+          "completion_tokens": 6,
+          "answer": "BLUE"
+        },
+        {
+          "sentinel": "math",
+          "decode_tps": 245.618,
+          "prompt_tokens": 12,
+          "completion_tokens": 6,
+          "answer": "4"
+        },
+        {
+          "sentinel": "capital",
+          "decode_tps": 247.113,
+          "prompt_tokens": 12,
+          "completion_tokens": 6,
+          "answer": "PARIS"
+        }
+      ],
+      "quality": true,
+      "simulated_delay_ms": 20.0
+    },
+    {
+      "name": "baseline_after",
+      "samples": [
+        {
+          "sentinel": "color",
+          "decode_tps": 124.343,
+          "prompt_tokens": 12,
+          "completion_tokens": 6,
+          "answer": "BLUE"
+        },
+        {
+          "sentinel": "math",
+          "decode_tps": 124.492,
+          "prompt_tokens": 12,
+          "completion_tokens": 6,
+          "answer": "4"
+        },
+        {
+          "sentinel": "capital",
+          "decode_tps": 124.258,
+          "prompt_tokens": 12,
+          "completion_tokens": 6,
+          "answer": "PARIS"
+        },
+        {
+          "sentinel": "color",
+          "decode_tps": 124.166,
+          "prompt_tokens": 12,
+          "completion_tokens": 6,
+          "answer": "BLUE"
+        },
+        {
+          "sentinel": "math",
+          "decode_tps": 124.357,
+          "prompt_tokens": 12,
+          "completion_tokens": 6,
+          "answer": "4"
+        },
+        {
+          "sentinel": "capital",
+          "decode_tps": 124.314,
+          "prompt_tokens": 12,
+          "completion_tokens": 6,
+          "answer": "PARIS"
+        }
+      ],
+      "quality": true,
+      "simulated_delay_ms": 40.0
+    }
+  ]
+}
